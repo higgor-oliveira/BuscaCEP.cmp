@@ -1,5 +1,6 @@
 # BuscaCEP.cmp
 
+
 <aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId"
 
                 controller="BuscaCEPController"> <!-- ADD PARA QUE A COMUNICAÇÃO COM LWC FUNCIONE https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/controllers_server_actions_call.htm-->
