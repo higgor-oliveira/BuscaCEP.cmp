@@ -1,9 +1,13 @@
 # BuscaCEP.cmp
 
 <aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId"
+
                 controller="BuscaCEPController"> <!-- ADD PARA QUE A COMUNICAÇÃO COM LWC FUNCIONE https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/controllers_server_actions_call.htm-->
+                
     <aura:attribute name="recordId" type="String" /> <!--ATRIBUTO -->
+    
     <aura:attribute name="CEP" type="String" /> <!-- ATRIBUTO -->
+    
      <aura:attribute name="retornoViaCEP" type="Object" /> <!-- ATRIBUTO PARA INSERIR OS VALORES NA TELA -->
     <!-- ... -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
